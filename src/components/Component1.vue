@@ -23,7 +23,7 @@
 
     <br><br>
 
-    <a href="http://localhost:8080">
+    <a href="/">
       <button>Go to HomePage</button>
     </a>
 
@@ -45,8 +45,8 @@ export default {
     return {
       iFrame1: true,
       iFrame2: false,
-      iFrame1URL: 'http://localhost:8080/page/1',
-      iFrame2URL: 'http://localhost:8080/page/2',
+      iFrame1URL: '/page/1',
+      iFrame2URL: '/page/2',
       key: 1
     };
   },
