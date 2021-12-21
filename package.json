@@ -44,7 +44,6 @@
     "not dead"
   ],
   "engines": {
-    "npm": "please-use-yarn",
     "yarn": ">= 1.19.1"
   }
 }
