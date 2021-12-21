@@ -5,7 +5,7 @@ import HelloWorld from "@/components/HelloWorld";
 
 export default [
     { path: '/', component: Home },
-    { path: '/path/:val', props: true, name: 'pathRoute', component: Component1 },
+    { path: '/path', name: 'pathRoute', component: Component1 },
     { path: '/page/:val', props: true, component: Page },
     { path: '/hello/:val', props: true, component: HelloWorld}
 ];

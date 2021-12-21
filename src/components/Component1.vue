@@ -1,7 +1,7 @@
 <template>
   <div>
+    <h1>Page with multiple iFrames</h1>
     <h2>iFrame is added below</h2>
-    <h1>VAL: {{ val }}</h1>
     <p>
       <button @click="goToFrame1">iFrame1</button>
       <button @click="goToFrame2">iFrame2</button>
@@ -29,7 +29,7 @@
 
     <br><br>
 
-    <button class="ma-auto" @click="goBack">
+    <button @click="goBack">
       Back Button
     </button>
 
@@ -62,6 +62,7 @@ export default {
       this.key = 2;
     },
     goBack() {
+    //This implementation does not help. Back button works the same for both the cases.
       if (this.iFrame1 && !this.iFrame2) {
         document.getElementById('iframe1').contentWindow.history.back();
       } else if (this.iFrame2 && !this.iFrame1) {

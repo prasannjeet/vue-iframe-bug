@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ 'Welcome to this page from iFrame Page' + val }}</h1>
+    <p v-if="this.val == 1"><strong>Now click on the iFrame2 button above to switch to another iFrame</strong></p>
   </div>
 </template>
 
